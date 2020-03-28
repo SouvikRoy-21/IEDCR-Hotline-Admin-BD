@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-class PatientDetails extends StatefulWidget {
+class CompletedPatientDetails extends StatefulWidget {
   @override
-  _PatientDetailsState createState() => _PatientDetailsState();
+  _CompletedPatientDetailsState createState() => _CompletedPatientDetailsState();
 }
 
-class _PatientDetailsState extends State<PatientDetails> {
+class _CompletedPatientDetailsState extends State<CompletedPatientDetails> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -14,7 +13,7 @@ class _PatientDetailsState extends State<PatientDetails> {
         body: ListView(
           scrollDirection: Axis.vertical,
           children: <Widget>[
-            details(),
+            completedDetails(),
             SizedBox(
               height: 5,
             ),
@@ -25,7 +24,7 @@ class _PatientDetailsState extends State<PatientDetails> {
   }
 }
 
-Card details(){
+Card completedDetails(){
   return Card(
     child: Padding(
       padding: const EdgeInsets.all(12.0),
@@ -75,3 +74,4 @@ Widget info (String q, String a) {
       )),
     );
 }
+

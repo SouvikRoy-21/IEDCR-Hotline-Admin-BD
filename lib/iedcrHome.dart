@@ -15,19 +15,33 @@ class _HomepageState extends State<Homepage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            GestureDetector(
+                onTap: (){
+                  Navigator.pushNamed(context, 'Important Cases');
+                },
+                child: actionTab('Important Cases')),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, 'pending cases');
+              },
+                child: actionTab('Pending Cases')
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, 'Completed Cases');
+              },
+                child: actionTab('Completed Cases')),
+            SizedBox(
+              height: 20,
+            ),
             actionTab('Find Cases'),
-            SizedBox(
-              height: 20,
-            ),
-            actionTab('Pending Cases'),
-            SizedBox(
-              height: 20,
-            ),
-            actionTab('Completed Cases'),
-            SizedBox(
-              height: 20,
-            ),
-            actionTab('Important Cases')
+
           ],
         ),
       ),

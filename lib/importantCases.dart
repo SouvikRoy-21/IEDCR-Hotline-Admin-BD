@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class PendingCases extends StatefulWidget {
+class ImportantCases extends StatefulWidget {
   @override
-  _PendingCasesState createState() => _PendingCasesState();
+  _ImportantCasesState createState() => _ImportantCasesState();
 }
 
-class _PendingCasesState extends State<PendingCases> {
+class _ImportantCasesState extends State<ImportantCases> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
       appBar: AppBar(
-        title: Text('Pending Cases'),
+        title: Text('Important Cases'),
         backgroundColor: Colors.blue,
         centerTitle: true,
       ),
@@ -18,46 +18,46 @@ class _PendingCasesState extends State<PendingCases> {
       body: ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
           SizedBox(
             height: 2,
           ),
-          pendingtab(context, '1234', '01781447234'),
+          importantTab(context, '1234', '01781447234'),
         ],
       ),
     ),
     );
   }
 }
-GestureDetector pendingtab(BuildContext context,String ticketNumber, String mobileNumber){
+GestureDetector importantTab(BuildContext context,String ticketNumber, String mobileNumber){
   return GestureDetector(
     onTap: (){
       Navigator.pushNamed(context, 'patient details');
@@ -84,4 +84,5 @@ GestureDetector pendingtab(BuildContext context,String ticketNumber, String mobi
     ),
   );
 }
+
 
